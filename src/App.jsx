@@ -8,7 +8,7 @@ import NavBar from "./components/NavBar/NavBar";
 const App = () => {
   const [beerArray, setBeerArray] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
-  const [filterBeer, setFilterBeer] = useState(filteredBeers)
+  // const [filterBeer, setFilterBeer] = useState(filteredBeers);
 
   const handleInput = (event) => {
     const cleanInput = event.target.value.toLowerCase();
@@ -20,6 +20,10 @@ const App = () => {
     return beerLowerCase.includes(searchTerm);
   });
 
+  const high_ABV = (event) => {
+    console.log(event.target.checked);
+  };
+
   //ACCESSING API
   useEffect(() => {
     const URL = `https://api.punkapi.com/v2/beers?page=2&per_page=80`;
@@ -28,17 +32,19 @@ const App = () => {
         return response.json();
       })
       .then((beerObject) => {
-        console.log(beerObject);
         setBeerArray(beerObject);
       });
   }, []);
 
   return (
     <div className="App">
-      <NavBar handleInput={handleInput} searchTerm={searchTerm} />
-      <CardList BeerArr={filterBeer} />
+      <NavBar
+        handleInput={handleInput}
+        filterFunction1={high_ABV}
+        searchTerm={searchTerm}
+      />
+      <CardList BeerArr={filteredBeers} />
     </div>
   );
 };
-
 export default App;
