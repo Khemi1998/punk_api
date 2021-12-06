@@ -7,6 +7,12 @@ import NavBar from "./components/NavBar/NavBar";
 
 const App = () => {
   const [beerArray, setBeerArray] = useState([]);
+  const [searchTerm, setSearchTerm] = useState("");
+
+  const handleInput = event => {
+    const cleanInput = event.target.value.toLowerCase();
+    setSearchTerm(cleanInput);
+  }
 
   //Requests that return multiple items will be limited to 25 results by default. Other pages are accesed using the ?page paramater, you can also increase the amount of beers returned in each request by changing the ?per_page paramater.
 
@@ -22,12 +28,18 @@ const App = () => {
       });
   }, []);
 
+  const filteredBeers = beerArray.filter(beer => {
+    const beerLowerCase = beer.name.toLowerCase();
+    return beerLowerCase.includes(searchTerm);
+  });
+
   return (
     <div className="App">
-      <NavBar />
-      <CardList BeerArr={beerArray} />
+      <NavBar handleInput={handleInput} searchTerm={searchTerm}/>
+      <CardList BeerArr={filteredBeers} />
     </div>
   );
 };
 
 export default App;
+//const { searchTerm, handleInput } = props;
