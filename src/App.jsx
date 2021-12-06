@@ -1,9 +1,11 @@
 import './App.scss';
+import CardList from './components/CardList/CardList';
+import beers from './data/data';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-     
+     <CardList BeerArr={beers}/>
     </div>
   );
 }
