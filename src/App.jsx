@@ -8,14 +8,19 @@ import NavBar from "./components/NavBar/NavBar";
 const App = () => {
   const [beerArray, setBeerArray] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
+  const [filterBeer, setFilterBeer] = useState(filteredBeers)
 
-  const handleInput = event => {
+  const handleInput = (event) => {
     const cleanInput = event.target.value.toLowerCase();
     setSearchTerm(cleanInput);
-  }
+  };
 
-  //Requests that return multiple items will be limited to 25 results by default. Other pages are accesed using the ?page paramater, you can also increase the amount of beers returned in each request by changing the ?per_page paramater.
+  const filteredBeers = beerArray.filter((beer) => {
+    const beerLowerCase = beer.name.toLowerCase();
+    return beerLowerCase.includes(searchTerm);
+  });
 
+  //ACCESSING API
   useEffect(() => {
     const URL = `https://api.punkapi.com/v2/beers?page=2&per_page=80`;
     fetch(URL)
@@ -28,18 +33,12 @@ const App = () => {
       });
   }, []);
 
-  const filteredBeers = beerArray.filter(beer => {
-    const beerLowerCase = beer.name.toLowerCase();
-    return beerLowerCase.includes(searchTerm);
-  });
-
   return (
     <div className="App">
-      <NavBar handleInput={handleInput} searchTerm={searchTerm}/>
-      <CardList BeerArr={filteredBeers} />
+      <NavBar handleInput={handleInput} searchTerm={searchTerm} />
+      <CardList BeerArr={filterBeer} />
     </div>
   );
 };
 
 export default App;
-//const { searchTerm, handleInput } = props;
