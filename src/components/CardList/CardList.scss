@@ -1,3 +1,27 @@
 .Beer__Card {
-    border: 2px solid green;
+  border: 5px solid black;
+  border-radius: 20px;
+  padding: 10px; 
+  height: 700vh;
+  margin: 10px;
+}
+
+.CardList {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  overflow-x: auto;
+  align-items: center;
+  margin: 0 20px;
+}
+
+@media screen and (min-width: 700px) {
+  .Beer__Card {
+    height: 500px;
+  }
+
+  .CardList {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }

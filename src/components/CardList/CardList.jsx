@@ -13,6 +13,7 @@ const CardList = (props) => {
           name={beer.name}
           tag={beer.tagline}
           date={beer.first_brewed}
+          ph={beer.ph}
           abv={beer.abv}
         />
       </div>

@@ -2,7 +2,7 @@ import React from "react";
 import "./Card.scss";
 
 const Card = (props) => {
-  const { picture, name, tag, date, abv } = props;
+  const { picture, name, tag, date, ph, abv } = props;
 
   return (
     <div className="Card">
@@ -11,6 +11,7 @@ const Card = (props) => {
       <h3 className="Card__tag">{tag}</h3>
       <h4 className="Card__date">{date}</h4>
       <h5 className="Card__abv">ABV: {abv}</h5>
+      <h6 className="Card__ph">pH: {ph}</h6>
     </div>
   );
 };
