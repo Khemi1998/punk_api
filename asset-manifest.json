@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/punk_api/static/css/main.a78b71cc.chunk.css",
-    "main.js": "/punk_api/static/js/main.00f1d34f.chunk.js",
-    "main.js.map": "/punk_api/static/js/main.00f1d34f.chunk.js.map",
+    "main.css": "/punk_api/static/css/main.1abeea91.chunk.css",
+    "main.js": "/punk_api/static/js/main.fdb91843.chunk.js",
+    "main.js.map": "/punk_api/static/js/main.fdb91843.chunk.js.map",
     "runtime-main.js": "/punk_api/static/js/runtime-main.e942eb08.js",
     "runtime-main.js.map": "/punk_api/static/js/runtime-main.e942eb08.js.map",
     "static/js/2.0daa55c8.chunk.js": "/punk_api/static/js/2.0daa55c8.chunk.js",
@@ -10,13 +10,13 @@
     "static/js/3.26e1a043.chunk.js": "/punk_api/static/js/3.26e1a043.chunk.js",
     "static/js/3.26e1a043.chunk.js.map": "/punk_api/static/js/3.26e1a043.chunk.js.map",
     "index.html": "/punk_api/index.html",
-    "static/css/main.a78b71cc.chunk.css.map": "/punk_api/static/css/main.a78b71cc.chunk.css.map",
+    "static/css/main.1abeea91.chunk.css.map": "/punk_api/static/css/main.1abeea91.chunk.css.map",
     "static/js/2.0daa55c8.chunk.js.LICENSE.txt": "/punk_api/static/js/2.0daa55c8.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.e942eb08.js",
     "static/js/2.0daa55c8.chunk.js",
-    "static/css/main.a78b71cc.chunk.css",
-    "static/js/main.00f1d34f.chunk.js"
+    "static/css/main.1abeea91.chunk.css",
+    "static/js/main.fdb91843.chunk.js"
   ]
 }
