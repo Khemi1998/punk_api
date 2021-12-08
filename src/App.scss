@@ -17,6 +17,10 @@
 }
 
 @media screen and (min-width: 700px) {
+  .App_name {
+    height: 150px;
+  }
+
   .App_main {
     flex-direction: row;
   }

@@ -40,7 +40,7 @@ const App = () => {
   };
 
   const high_acidity = (event) => {
-    const high_acidity = filteredBeers.filter((beer) => beer.ph < 4);
+    const high_acidity = filteredBeers.filter((beer) => (beer.ph < 4)&&(beer.ph !=null));
     event.target.checked
       ? setBeerArray(high_acidity)
       : setBeerArray(unfilteredObject);
@@ -70,7 +70,7 @@ const App = () => {
 
   //ACCESSING API
   useEffect(() => {
-    const URL = `https://api.punkapi.com/v2/beers?${urlLink}`;
+    const URL = `https://api.punkapi.com/v2/beers?${urlLink}&per_page=78`;
     fetch(URL)
       .then((response) => {
         return response.json();
@@ -85,7 +85,7 @@ const App = () => {
     <div className="App">
       <h1 className="App_name">POUR PROUDLY</h1>
       <div className="App_main">
-        <NavBar
+      <NavBar
           handleInput={handleInput}
           filterFunction1={high_ABV}
           filterFunction2={classic_range}
