@@ -1,11 +1,12 @@
 .Beer__Card {
   border: 5px solid black;
   border-radius: 20px;
-  padding: 5vh 10vh; 
-  height: 52vh;
+  padding: 5vh 5vh; 
+  height: 30vh;
   margin: 20px 10px;
   justify-content: center;
   display: flex;
+  white-space: nowrap;
 }
 
 .CardList {
@@ -15,6 +16,7 @@
   overflow-x: auto;
   align-items: center;
   margin: 0 20px;
+  margin-top: 8vh;
 }
 
 @media screen and (min-width: 700px) {
