@@ -87,6 +87,7 @@ const App = () => {
       <div className="App_main">
       <NavBar
           handleInput={handleInput}
+          results={filteredBeers.length}
           filterFunction1={high_ABV}
           filterFunction2={classic_range}
           filterFunction3={high_acidity}
