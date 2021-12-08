@@ -2,7 +2,7 @@
   border: 5px solid black;
   border-radius: 20px;
   padding: 5vh 5vh; 
-  height: 30vh;
+  height: 40vh;
   margin: 20px 10px;
   justify-content: center;
   display: flex;
@@ -15,14 +15,14 @@
   display: flex;
   overflow-x: auto;
   align-items: center;
-  margin: 0 20px;
+  margin: 0px;
   margin-top: 8vh;
 }
 
 @media screen and (min-width: 700px) {
   .Beer__Card {
     margin-top: 50px;
-    height: 400px;
+    height: 420px;
     white-space: pre-wrap;
   }
 

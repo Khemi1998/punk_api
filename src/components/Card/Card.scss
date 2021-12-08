@@ -1,5 +1,14 @@
 .Card__picture {
   height: 150px;
+  padding: 15px;
+}
+
+.Card__name {
+  padding: 15px;
+}
+
+.Card__tag {
+  padding: 10px;
 }
 
 @media screen and (min-width: 700px) {
