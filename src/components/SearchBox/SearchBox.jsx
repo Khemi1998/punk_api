@@ -11,4 +11,6 @@ const SearchBox = (props) => {
   );
 };
 
+//for form, use defaultvalue and onsubmit => dont forget to preventdefault()
+
 export default SearchBox;
