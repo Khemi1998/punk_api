@@ -1,9 +1,11 @@
 .Beer__Card {
   border: 5px solid black;
   border-radius: 20px;
-  padding: 10px; 
-  height: 700vh;
-  margin: 10px;
+  padding: 5vh 10vh; 
+  height: 52vh;
+  margin: 20px 10px;
+  margin-top: 150px;
+  justify-content: center;
 }
 
 .CardList {
@@ -23,5 +25,6 @@
   .CardList {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 20vw;
   }
 }

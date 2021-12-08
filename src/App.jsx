@@ -83,14 +83,17 @@ const App = () => {
 
   return (
     <div className="App">
-      <NavBar
-        handleInput={handleInput}
-        filterFunction1={high_ABV}
-        filterFunction2={classic_range}
-        filterFunction3={high_acidity}
-        searchTerm={searchTerm}
-      />
-      <CardList BeerArr={filteredBeers} />
+      <h1 className="App_name">POUR PROUDLY</h1>
+      <div className="App_main">
+        <NavBar
+          handleInput={handleInput}
+          filterFunction1={high_ABV}
+          filterFunction2={classic_range}
+          filterFunction3={high_acidity}
+          searchTerm={searchTerm}
+        />
+        <CardList BeerArr={filteredBeers} />
+      </div>
     </div>
   );
 };

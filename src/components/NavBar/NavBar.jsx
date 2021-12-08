@@ -8,9 +8,11 @@ const NavBar = (props) => {
   return (
     <div className="NavBar">
      <SearchBox searchTerm={searchTerm} handleInput={handleInput}/>
+     <section className="NavBar__checkboxes">
      <FilterBlock filterBlock={filterFunction1} filterLabel="High ABV (>6.0%)"/>
      <FilterBlock filterBlock={filterFunction2}filterLabel="Classic Range"/>
      <FilterBlock filterBlock={filterFunction3} filterLabel="Acidic (pH<4)"/>
+     </section>
     </div>
   );
 }

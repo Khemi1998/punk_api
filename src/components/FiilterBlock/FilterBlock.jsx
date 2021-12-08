@@ -7,7 +7,7 @@ const FilterBlock = (props, index) => {
   return (
     <div className="FilterBlock">
         <h2 className="FilterBlock__label">{filterLabel}</h2>
-        <input type="checkbox" id={index} onClick={filterBlock}/>
+        <input type="checkbox" id={index} onChange={filterBlock}/>
     </div>
   );
 };
