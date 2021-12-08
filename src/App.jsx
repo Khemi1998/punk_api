@@ -22,21 +22,21 @@ const App = () => {
   });
 
   const high_ABV = (event) => {
-    event.target.checked ? setUrlLink("abv_gt=6") : setUrlLink("");
-    /*
+    //event.target.checked ? setUrlLink("abv_gt=6") : setUrlLink("");
+
     if (event.target.checked) {
-      if (urlLink="") {
-        setUrlLink("abv_gt=6")
-      }else {
-        setUrlLink("&abv_gt=6")
+      if ((urlLink = "brewed_before=01-2010")) {
+        setUrlLink(urlLink + "&abv_gt=6");
+      } else {
+        setUrlLink("abv_gt=6");
       }
-    }else {
-      if (urlLink="abv_gt=6") {
-        setUrlLink("")
-      }else {
-        setUrlLink(urlLink - "&abv_gt=6")
+    } else {
+      if ((urlLink = "brewed_before=01-2010&abv_gt=6")) {
+        setUrlLink("brewed_before=01-2010");
+      } else {
+        setUrlLink("");
       }
-    }*/
+    }
   };
 
   const high_acidity = (event) => {
@@ -52,7 +52,20 @@ const App = () => {
     */
 
   const classic_range = (event) => {
-    event.target.checked ? setUrlLink("brewed_before=01-2010") : setUrlLink("");
+    // event.target.checked ? setUrlLink("brewed_before=01-2010") : setUrlLink("");
+    if (event.target.checked) {
+      if ((urlLink = "abv_gt=6")) {
+        setUrlLink(urlLink + "&brewed_before=01-2010");
+      } else {
+        setUrlLink("brewed_before=01-2010");
+      }
+    } else {
+      if ((urlLink = "abv_gt=6&brewed_before=01-2010")) {
+        setUrlLink("abv_gt=6");
+      } else {
+        setUrlLink("");
+      }
+    }
   };
 
   //ACCESSING API
@@ -64,7 +77,7 @@ const App = () => {
       })
       .then((beerObject) => {
         setBeerArray(beerObject);
-        setUnfilteredObject(beerObject)
+        setUnfilteredObject(beerObject);
       });
   }, [urlLink]);
 
