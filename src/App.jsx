@@ -74,7 +74,7 @@ const App = () => {
 
   //ACCESSING API
   useEffect(() => {
-    const URL = `https://api.punkapi.com/v2/beers?${urlLink}&per_page=78`;
+    const URL = `https://api.punkapi.com/v2/beers?&${urlLink}`;
     fetch(URL)
       .then((response) => {
         return response.json();
