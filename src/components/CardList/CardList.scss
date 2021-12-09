@@ -1,5 +1,5 @@
 .Beer__Card {
-  border: 5px solid black;
+  border: 5px solid rgb(33, 33, 33);
   border-radius: 20px;
   padding: 5vh 5vh; 
   height: 40vh;
@@ -7,6 +7,7 @@
   justify-content: center;
   display: flex;
   white-space: nowrap;
+  background-color: rgba(255, 255, 255, 0.523);
 }
 
 .CardList {
@@ -22,7 +23,7 @@
 @media screen and (min-width: 700px) {
   .Beer__Card {
     margin-top: 50px;
-    height: 420px;
+    height: 470px;
     white-space: pre-wrap;
   }
 

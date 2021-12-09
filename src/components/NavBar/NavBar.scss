@@ -1,14 +1,14 @@
 .NavBar {
-  background-color: purple;
+  background-color: rgb(33, 33, 33);
   width: 100vw;
-  height: 13vh;
-  border-bottom: 5px solid black;
+  height: 14vh;
   padding: 5% 0;
   margin-top: 7vh;
+  color: white;
 }
 
 .NavBar__results {
-  padding: 8px;
+  padding: 10px;
 }
 
 .NavBar__checkboxes {
@@ -23,7 +23,6 @@
   .NavBar {
     height: 100vh;
     width: 350px;
-    border-bottom: none;
     padding: 0;
     position: fixed;
     margin-top: 0vh;

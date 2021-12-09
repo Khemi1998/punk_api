@@ -15,7 +15,7 @@ const NavBar = (props) => {
   return (
     <div className="NavBar">
       <SearchBox searchTerm={searchTerm} handleInput={handleInput} />
-      <p className="NavBar__results" >Results:{results} beer(s)</p>
+      <p className="NavBar__results" >Results: {results} beer(s)</p>
       <section className="NavBar__checkboxes">
         <FilterBlock
           filterBlock={filterFunction1}

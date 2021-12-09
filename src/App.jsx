@@ -9,7 +9,7 @@ const App = () => {
   const [beerArray, setBeerArray] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
   let [urlLink, setUrlLink] = useState("");
-  const [unfilteredObject, setUnfilteredObject] = useState("");
+  const [unfilteredObject, setUnfilteredObject] = useState([]);
 
   const handleInput = (event) => {
     const cleanInput = event.target.value.toLowerCase();
@@ -40,11 +40,14 @@ const App = () => {
   };
 
   const high_acidity = (event) => {
-    const high_acidity = filteredBeers.filter((beer) => (beer.ph < 4)&&(beer.ph !=null));
+    const high_acidity = filteredBeers.filter(
+      (beer) => beer.ph < 4 && beer.ph != null
+    );
     event.target.checked
       ? setBeerArray(high_acidity)
       : setBeerArray(unfilteredObject);
   };
+
   /*
     event.target.checked
     ? setUrlLink("ph_lt=4")
@@ -85,7 +88,7 @@ const App = () => {
     <div className="App">
       <h1 className="App_name">POUR PROUDLY</h1>
       <div className="App_main">
-      <NavBar
+        <NavBar
           handleInput={handleInput}
           results={filteredBeers.length}
           filterFunction1={high_ABV}
