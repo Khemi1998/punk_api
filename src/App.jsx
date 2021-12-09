@@ -39,21 +39,6 @@ const App = () => {
     }
   };
 
-  const high_acidity = (event) => {
-    const high_acidity = filteredBeers.filter(
-      (beer) => beer.ph < 4 && beer.ph != null
-    );
-    event.target.checked
-      ? setBeerArray(high_acidity)
-      : setBeerArray(unfilteredObject);
-  };
-
-  /*
-    event.target.checked
-    ? setUrlLink("ph_lt=4")
-    : setUrlLink("");
-    */
-
   const classic_range = (event) => {
     // event.target.checked ? setUrlLink("brewed_before=01-2010") : setUrlLink("");
     if (event.target.checked) {
@@ -70,6 +55,22 @@ const App = () => {
       }
     }
   };
+
+
+  const high_acidity = (event) => {
+    const high_acidity = filteredBeers.filter(
+      (beer) => beer.ph < 4 && beer.ph != null
+    );
+    event.target.checked
+      ? setBeerArray(high_acidity)
+      : setBeerArray(unfilteredObject);
+  };
+
+  /*
+    event.target.checked
+    ? setUrlLink("ph_lt=4")
+    : setUrlLink("");
+    */
 
   //ACCESSING API
   useEffect(() => {

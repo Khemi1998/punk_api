@@ -1,10 +1,12 @@
+@use "../../assets/sass/_variables.scss" as *;
+
 .NavBar {
-  background-color: rgb(33, 33, 33);
+  background-color: $primary-color;
   width: 100vw;
   height: 14vh;
   padding: 5% 0;
   margin-top: 7vh;
-  color: white;
+  color: $secondary-color;
 }
 
 .NavBar__results {

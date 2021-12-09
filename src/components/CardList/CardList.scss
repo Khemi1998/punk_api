@@ -1,5 +1,7 @@
+@use "../../assets/sass/_variables.scss" as *;
+
 .Beer__Card {
-  border: 5px solid rgb(33, 33, 33);
+  border: 5px solid $primary-color;
   border-radius: 20px;
   padding: 5vh 5vh; 
   height: 40vh;
