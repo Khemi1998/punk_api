@@ -23,6 +23,8 @@
 
 .App {
   background-image: url(./assets/images/paolo-bendandi-2kLHSCnMQZ8-unsplash.jpg);
+  background-size: contain;
+  min-height: 100vh;
 }
 
 @media screen and (min-width: 700px) {
