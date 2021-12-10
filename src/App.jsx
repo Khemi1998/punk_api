@@ -11,7 +11,7 @@ const App = () => {
   let [urlLink, setUrlLink] = useState("");
   const [unfilteredObject, setUnfilteredObject] = useState([]);
   const [highAcidity, setHighAcidity] =useState([]);
-  const [test, setTest] = useState(false);
+  const [highAcidityCheck, setHighAcidityCheck] = useState(false);
 
   const handleInput = (event) => {
     const cleanInput = event.target.value.toLowerCase();
@@ -59,8 +59,8 @@ const App = () => {
   };
 
   const high_acidity = (event) => {
-    setTest(!test)
-    console.log(test)
+    setHighAcidityCheck(!highAcidityCheck)
+    console.log(highAcidityCheck)
 
     console.log(urlLink);
     event.target.checked
@@ -81,12 +81,12 @@ const App = () => {
         const high_acidity = beerObject.filter(
           (beer) => beer.ph < 4 && beer.ph !== null
         );
-        if (test===true) {
+        if (highAcidityCheck===true) {
           setBeerArray(high_acidity)
         }
         setHighAcidity(high_acidity);
       });
-  }, [urlLink, test]);
+  }, [urlLink, highAcidityCheck]);
 
   return (
     <div className="App">
