@@ -8,9 +8,10 @@ import NavBar from "./components/NavBar/NavBar";
 const App = () => {
   const [beerArray, setBeerArray] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
-  let [urlLink, setUrlLink] = useState(null);
+  let [urlLink, setUrlLink] = useState("");
   const [unfilteredObject, setUnfilteredObject] = useState([]);
   const [highAcidity, setHighAcidity] =useState([]);
+  const [test, setTest] = useState(false);
 
   const handleInput = (event) => {
     const cleanInput = event.target.value.toLowerCase();
@@ -58,6 +59,9 @@ const App = () => {
   };
 
   const high_acidity = (event) => {
+    setTest(!test)
+    console.log(test)
+
     console.log(urlLink);
     event.target.checked
       ? setBeerArray(highAcidity)
@@ -75,12 +79,14 @@ const App = () => {
         setBeerArray(beerObject);
         setUnfilteredObject(beerObject);
         const high_acidity = beerObject.filter(
-          (beer) => beer.ph < 4 && beer.ph != null
+          (beer) => beer.ph < 4 && beer.ph !== null
         );
+        if (test===true) {
+          setBeerArray(high_acidity)
+        }
         setHighAcidity(high_acidity);
       });
-  }, [urlLink]);
-
+  }, [urlLink, test]);
 
   return (
     <div className="App">
