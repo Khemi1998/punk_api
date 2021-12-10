@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/punk_api/static/css/main.88648331.chunk.css",
-    "main.js": "/punk_api/static/js/main.cdc6f1a3.chunk.js",
-    "main.js.map": "/punk_api/static/js/main.cdc6f1a3.chunk.js.map",
+    "main.css": "/punk_api/static/css/main.87a15831.chunk.css",
+    "main.js": "/punk_api/static/js/main.eb7185cc.chunk.js",
+    "main.js.map": "/punk_api/static/js/main.eb7185cc.chunk.js.map",
     "runtime-main.js": "/punk_api/static/js/runtime-main.e942eb08.js",
     "runtime-main.js.map": "/punk_api/static/js/runtime-main.e942eb08.js.map",
     "static/js/2.0daa55c8.chunk.js": "/punk_api/static/js/2.0daa55c8.chunk.js",
@@ -10,14 +10,14 @@
     "static/js/3.26e1a043.chunk.js": "/punk_api/static/js/3.26e1a043.chunk.js",
     "static/js/3.26e1a043.chunk.js.map": "/punk_api/static/js/3.26e1a043.chunk.js.map",
     "index.html": "/punk_api/index.html",
-    "static/css/main.88648331.chunk.css.map": "/punk_api/static/css/main.88648331.chunk.css.map",
+    "static/css/main.87a15831.chunk.css.map": "/punk_api/static/css/main.87a15831.chunk.css.map",
     "static/js/2.0daa55c8.chunk.js.LICENSE.txt": "/punk_api/static/js/2.0daa55c8.chunk.js.LICENSE.txt",
     "static/media/App.scss": "/punk_api/static/media/paolo-bendandi-2kLHSCnMQZ8-unsplash.973cc8dd.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.e942eb08.js",
     "static/js/2.0daa55c8.chunk.js",
-    "static/css/main.88648331.chunk.css",
-    "static/js/main.cdc6f1a3.chunk.js"
+    "static/css/main.87a15831.chunk.css",
+    "static/js/main.eb7185cc.chunk.js"
   ]
 }
