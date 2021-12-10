@@ -90,7 +90,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <h1 className="App_name">POUR PROUDLY</h1>
+      <h1 className="App_name">PUNK API</h1>
       <div className="App_main">
         <NavBar
           handleInput={handleInput}

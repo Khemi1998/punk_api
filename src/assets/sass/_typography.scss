@@ -1,4 +1,10 @@
 * {
-    font-family: 'Alfa Slab One', cursive;
-    font-weight: 100;
+  font-family: "Alfa Slab One", cursive;
+  font-weight: 100;
+}
+
+@media screen and (min-width: 700px) {
+  h1 {
+    font-size: 100px;
+  }
 }
