@@ -8,7 +8,7 @@ import NavBar from "./components/NavBar/NavBar";
 const App = () => {
   const [beerArray, setBeerArray] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
-  let [urlLink, setUrlLink] = useState("");
+  let [urlLink, setUrlLink] = useState(null);
   const [unfilteredObject, setUnfilteredObject] = useState([]);
 
   const handleInput = (event) => {
@@ -22,55 +22,49 @@ const App = () => {
   });
 
   const high_ABV = (event) => {
-    //event.target.checked ? setUrlLink("abv_gt=6") : setUrlLink("");
-
     if (event.target.checked) {
-      if ((urlLink = "brewed_before=01-2010")) {
-        setUrlLink(urlLink + "&abv_gt=6");
-      } else {
+      if (urlLink === "") {
         setUrlLink("abv_gt=6");
+      } else {
+        setUrlLink("abv_gt=6&brewed_before=01-2010");
       }
     } else {
-      if ((urlLink = "brewed_before=01-2010&abv_gt=6")) {
+      if (urlLink === "brewed_before=01-2010&abv_gt=6") {
         setUrlLink("brewed_before=01-2010");
       } else {
         setUrlLink("");
       }
     }
+    console.log(urlLink);
   };
 
   const classic_range = (event) => {
     // event.target.checked ? setUrlLink("brewed_before=01-2010") : setUrlLink("");
     if (event.target.checked) {
-      if ((urlLink = "abv_gt=6")) {
-        setUrlLink(urlLink + "&brewed_before=01-2010");
-      } else {
+      if (urlLink === "") {
         setUrlLink("brewed_before=01-2010");
+      } else {
+        setUrlLink("brewed_before=01-2010&abv_gt=6");
       }
     } else {
-      if ((urlLink = "abv_gt=6&brewed_before=01-2010")) {
-        setUrlLink("abv_gt=6");
+      if (urlLink === "brewed_before=01-2010&abv_gt=6") {
+        setUrlLink("brewed_before=01-2010");
       } else {
         setUrlLink("");
       }
     }
+    console.log(urlLink);
   };
 
-
   const high_acidity = (event) => {
-    const high_acidity = filteredBeers.filter(
+    const high_acidity = beerArray.filter(
       (beer) => beer.ph < 4 && beer.ph != null
     );
+    console.log(urlLink);
     event.target.checked
       ? setBeerArray(high_acidity)
       : setBeerArray(unfilteredObject);
   };
-
-  /*
-    event.target.checked
-    ? setUrlLink("ph_lt=4")
-    : setUrlLink("");
-    */
 
   //ACCESSING API
   useEffect(() => {
@@ -84,7 +78,6 @@ const App = () => {
         setUnfilteredObject(beerObject);
       });
   }, [urlLink]);
-
   return (
     <div className="App">
       <h1 className="App_name">POUR PROUDLY</h1>
@@ -102,4 +95,5 @@ const App = () => {
     </div>
   );
 };
+
 export default App;
