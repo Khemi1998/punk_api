@@ -23,7 +23,7 @@ const App = () => {
     return beerLowerCase.includes(searchTerm);
   });
 
-  const high_ABV = (event) => {
+  const handleCheck_high_ABV = (event) => {
     if (event.target.checked) {
       if (urlLink === "") {
         setUrlLink("abv_gt=6");
@@ -40,7 +40,7 @@ const App = () => {
     console.log(urlLink);
   };
 
-  const classic_range = (event) => {
+  const handleCheck_classic_range = (event) => {
     // event.target.checked ? setUrlLink("brewed_before=01-2010") : setUrlLink("");
     if (event.target.checked) {
       if (urlLink === "") {
@@ -58,7 +58,7 @@ const App = () => {
     console.log(urlLink);
   };
 
-  const high_acidity = (event) => {
+  const handleCheck_high_acidity = (event) => {
     setHighAcidityCheck(!highAcidityCheck)
     console.log(highAcidityCheck)
 
@@ -95,9 +95,9 @@ const App = () => {
         <NavBar
           handleInput={handleInput}
           results={filteredBeers.length}
-          filterFunction1={high_ABV}
-          filterFunction2={classic_range}
-          filterFunction3={high_acidity}
+          filterFunction1={handleCheck_high_ABV}
+          filterFunction2={handleCheck_classic_range}
+          filterFunction3={handleCheck_high_acidity}
           searchTerm={searchTerm}
         />
         <CardList BeerArr={filteredBeers} />
