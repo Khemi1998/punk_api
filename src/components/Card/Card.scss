@@ -5,6 +5,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 15rem;
+  white-space: pre-line;
 }
 
 .Card__picture {
@@ -33,6 +35,9 @@
 }
 
 @media screen and (min-width: 961px) {
+  .Card {
+    white-space: nowrap;
+  }
   .Card__picture {
     height: 190px;
   }
