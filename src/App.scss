@@ -5,8 +5,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgb(33, 33, 33);
-  color: white;
+  background-color: $primary-color;
+  color: $secondary-color;
   justify-content: center;
   height: 70px;
   position: fixed;
@@ -23,7 +23,6 @@
 
 .App {
   background-image: url(./assets/images/paolo-bendandi-2kLHSCnMQZ8-unsplash.jpg);
-  background-size: contain;
   min-height: 100vh;
 }
 
