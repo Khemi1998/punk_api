@@ -1,32 +1,7 @@
 @use "../../assets/sass/_variables.scss" as *;
 
-.NavBar {
-  background-color: $primary-color;
-  width: 100vw;
-  height: 17vh;
-  padding: 5% 0;
-  margin-top: 7vh;
-  color: $secondary-color;
-}
 
-.NavBar__results {
-  padding: 10px;
-}
-
-.NavBar__checkboxes {
-  margin: 10vh 0;
-  height: 60vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
 
 @media screen and (min-width: 961px) {
-  .NavBar {
-    height: 100vh;
-    width: 350px;
-    padding: 0;
-    position: fixed;
-    margin-top: 0vh;
-  }
+
 }
