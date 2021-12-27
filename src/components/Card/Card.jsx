@@ -2,10 +2,10 @@ import React from "react";
 import "./Card.scss";
 
 const Card = (props) => {
-  const { index, picture, name, tag, date, ph, abv } = props;
+  const {picture, name, tag, date, ph, abv } = props;
 
   return (
-    <div className="Card" key={"beer" + index}>
+    <div className="Card">
       <img className="Card__picture" src={picture} alt={name} />
       <h2 className="Card__name">{name}</h2>
       <h3 className="Card__tag">{tag}</h3>

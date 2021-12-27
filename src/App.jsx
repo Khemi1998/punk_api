@@ -65,6 +65,7 @@ const App = () => {
         setUrlLink("");
       }
     }
+    console.log(event)
   };
 
   const handleCheck_high_acidity = (event) => {

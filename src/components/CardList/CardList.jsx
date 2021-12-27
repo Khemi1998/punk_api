@@ -7,8 +7,7 @@ const CardList = (props) => {
 
   const CardLists = BeerArr.map((beer, index) => {
     return (
-        <Card
-          index={index}
+        <Card key={index}
           picture={beer.image_url}
           name={beer.name}
           tag={beer.tagline}
