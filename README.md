@@ -9,4 +9,4 @@ The page has been deisgned with the mobile-first approach. The mobile-version do
 
 ## Improvements
 
-This page can be improved further by adding a drop-down selection menu for the checkbox filters on the mobile version to be space-effient. Further improvements would include adding a feature where more information about the beer is provided to the user when they click on a beer card.
+This page can be improved further by adding a drop-down selection menu for the checkbox filters on the mobile version to be space-effient.
