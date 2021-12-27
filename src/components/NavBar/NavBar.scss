@@ -1,7 +1,21 @@
 @use "../../assets/sass/_variables.scss" as *;
 
+.nav-bar__container {
+  background-color: $tertiary-color;
+  border-bottom: 2px solid lightgray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+.nav-bar--results {
+  padding-top: 0.3rem;
+  color: rgb(107, 107, 107);
+}
+
+.nav-bar__checkboxes {
+  padding: 0.5rem;
+}
 
 @media screen and (min-width: 961px) {
-
 }

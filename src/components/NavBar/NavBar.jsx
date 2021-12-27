@@ -13,21 +13,21 @@ const NavBar = (props) => {
   return (
     <div className="nav-bar__container">
       <SearchBox searchTerm={searchTerm} handleInput={handleInput} />
-      <p className="nav-bar--results" >Results: {results} beer(s)</p>
+      <h6 className="nav-bar--results" >Results: {results} beer(s)</h6>
       <section className="nav-bar__checkboxes">
         <FilterBlock
           filterBlock={filterFunction}
-          filterLabel="High ABV (>6.0%)"
+          filterLabel="high ABV (>6.0%)"
           name="abv"
         />
         <FilterBlock
           filterBlock={filterFunction}
-          filterLabel="Classic Range"
+          filterLabel="classic range"
           name="classic"
         />
         <FilterBlock
           filterBlock={filterFunction}
-          filterLabel="Acidic (pH<4)"
+          filterLabel="acidic (pH<4)"
           name="ph"
         />
       </section>

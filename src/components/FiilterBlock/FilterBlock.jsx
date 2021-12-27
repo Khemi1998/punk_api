@@ -6,7 +6,7 @@ const FilterBlock = (props, index) => {
 
   return (
     <div className="filterblock__container">
-        <h2 className="filterblock--label">{filterLabel}</h2>
+        <h5 className="filterblock--label">{filterLabel}</h5>
         <input className="filterblock--checkbox" type="checkbox" id={index} name={name} onChange={filterBlock}/>
     </div>
   );
