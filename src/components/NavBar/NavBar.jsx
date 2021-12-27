@@ -11,10 +11,10 @@ const NavBar = (props) => {
   } = props;
 
   return (
-    <div className="NavBar">
+    <div className="nav-bar__container">
       <SearchBox searchTerm={searchTerm} handleInput={handleInput} />
-      <p className="NavBar__results" >Results: {results} beer(s)</p>
-      <section className="NavBar__checkboxes">
+      <p className="nav-bar--results" >Results: {results} beer(s)</p>
+      <section className="nav-bar__checkboxes">
         <FilterBlock
           filterBlock={filterFunction}
           filterLabel="High ABV (>6.0%)"

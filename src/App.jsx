@@ -106,9 +106,9 @@ const App = () => {
   }, [urlLink, highAcidityCheck, searching, reset]);
 
   return (
-    <div className="App">
-      <h1 className="App_name">PUNK API</h1>
-      <div className="App_main">
+    <div className="punk__container">
+      <h1 className="punk--title">PUNK API</h1>
+      <div className="punk__main">
         <NavBar
           handleInput={handleInput}
           results={beerArray.length}
