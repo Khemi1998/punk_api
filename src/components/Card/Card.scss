@@ -1,53 +1,51 @@
 @use "../../assets/sass/_variables.scss" as *;
 
 .card__container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 2rem;
-    box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem $tertiary-color;
-    padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 2rem;
+  box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem $tertiary-color;
+  padding: 1rem;
 }
 
 .card__front {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0.5rem;
-    gap:0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem;
+  gap: 0.5rem;
 }
 
 .card--picture {
-    width: 1.5rem;
+  width: 1.5rem;
 }
 
 .card__data {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;    
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 .data {
-    padding: 0.5rem;
+  padding: 0.5rem;
 }
 
 .card__button {
-    padding: 0.25rem;
-    width: 3rem;
-    background-color: $tertiary-color;
-    border-radius: 8px;
-    border: transparent;
+  padding: 0.25rem;
+  width: 3rem;
+  background-color: $tertiary-color;
+  border-radius: 8px;
+  border: transparent;
 }
 
 .card--description {
-    padding: 1rem;
-}
-
-.card__container:hover .card__button {
-    background-color: $primary-color;
-    cursor: pointer;
+  padding: 1rem;
 }
 
 @media screen and (min-width: 961px) {
-
+  .card__container:hover .card__button {
+    background-color: $primary-color;
+    cursor: pointer;
+  }
 }
