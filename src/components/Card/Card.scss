@@ -5,7 +5,7 @@
   flex-direction: column;
   justify-content: center;
   margin-top: 2rem;
-  box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem $tertiary-color;
+  box-shadow: 0rem 0rem 0.5rem 0.5rem $tertiary-color;
   padding: 1rem;
 }
 
@@ -45,8 +45,12 @@
 
 @media screen and (min-width: 961px) {
   .card__container:hover .card__button {
-    background-color: $primary-color;
+    background-color: $tertiary-color;
     cursor: pointer;
+  }
+
+  .card__container:hover {
+    background-color: $primary-color;
   }
 
   .card__container {
