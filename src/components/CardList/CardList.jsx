@@ -14,6 +14,7 @@ const CardList = (props) => {
           date={beer.first_brewed}
           ph={beer.ph}
           abv={beer.abv}
+          description={beer.description}
         />
     );
   });
