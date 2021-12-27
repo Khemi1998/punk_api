@@ -112,7 +112,7 @@ const App = () => {
         <NavBar
           handleInput={handleInput}
           results={beerArray.length}
-          filterFunction1={filtering}
+          filterFunction={filtering}
           searchTerm={searchTerm}
         />
         <CardList BeerArr={beerArray} />
