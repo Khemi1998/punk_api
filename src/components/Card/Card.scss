@@ -48,4 +48,12 @@
     background-color: $primary-color;
     cursor: pointer;
   }
+
+  .card__container {
+    height: 15rem;
+  }
+
+  .card__button {
+    display: inline;
+  }
 }
