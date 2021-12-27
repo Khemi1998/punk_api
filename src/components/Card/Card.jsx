@@ -24,7 +24,7 @@ const Card = (props) => {
           <h5 className="data card--ph">pH: {ph}</h5>
         </div>
       </div>)}
-      {!showImage && (<h6 className="card--description">{description}</h6>)}
+      {!showImage && (<h5 className="card--description">{description}</h5>)}
     </div>
   );
 };

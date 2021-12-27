@@ -1,13 +1,16 @@
 @use "../../assets/sass/variables" as *;
 
 .filterblock__container {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    padding: 0.2rem;
-    width: 10rem;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  padding: 0.2rem;
+  width: 10rem;
 }
 
 @media screen and (min-width: 961px) {
-
+  .filterblock__container {
+    width: 15rem;
+    margin: 0.5rem;
+  }
 }

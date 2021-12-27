@@ -9,5 +9,12 @@
 }
 
 @media screen and (min-width: 961px) {
+    .punk--title {
+        padding: 1.5rem;
+    }
 
+    .punk__main {
+        display: flex;
+        flex-direction: row;
+    }
 }
