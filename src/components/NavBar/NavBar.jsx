@@ -7,8 +7,6 @@ const NavBar = (props) => {
     searchTerm,
     handleInput,
     filterFunction1,
-    filterFunction2,
-    filterFunction3,
     results
   } = props;
 
@@ -20,14 +18,17 @@ const NavBar = (props) => {
         <FilterBlock
           filterBlock={filterFunction1}
           filterLabel="High ABV (>6.0%)"
+          name="abv"
         />
         <FilterBlock
-          filterBlock={filterFunction2}
+          filterBlock={filterFunction1}
           filterLabel="Classic Range"
+          name="classic"
         />
         <FilterBlock
-          filterBlock={filterFunction3}
+          filterBlock={filterFunction1}
           filterLabel="Acidic (pH<4)"
+          name="ph"
         />
       </section>
     </div>
