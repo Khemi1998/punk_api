@@ -11,8 +11,7 @@ const Card = (props) => {
   }
 
   return (
-    <div className="card__container">
-      <button className="card__button" onClick={handleClick}>info</button>
+    <div onClick={handleClick} className="card__container">
       {showImage && (<div className="card__front">
         <img className="card--picture" src={picture} alt={name} />
         <h2 className="card--name">{name}</h2>

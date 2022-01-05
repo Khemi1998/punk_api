@@ -7,6 +7,7 @@
   margin-top: 2rem;
   box-shadow: 0rem 0rem 0.5rem 0.5rem $tertiary-color;
   padding: 1rem;
+  cursor: pointer;
 }
 
 .card__front {
@@ -31,33 +32,16 @@
   padding: 0.5rem;
 }
 
-.card__button {
-  padding: 0.25rem;
-  width: 3rem;
-  background-color: $tertiary-color;
-  border-radius: 8px;
-  border: transparent;
-}
-
 .card--description {
   padding: 1rem;
 }
 
 @media screen and (min-width: 961px) {
-  .card__container:hover .card__button {
-    background-color: $tertiary-color;
-    cursor: pointer;
-  }
-
   .card__container:hover {
     background-color: $primary-color;
   }
 
   .card__container {
     height: 15rem;
-  }
-
-  .card__button {
-    display: inline;
   }
 }
