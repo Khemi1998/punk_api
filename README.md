@@ -7,6 +7,14 @@ https://khemi1998.github.io/punk_api/
 
 This project uses the punk_api (https://punkapi.com) to allow the user to search for beers. This page uses React to provide the user with beers' name, tagline, abv, first brewed date and ph levels. The user can also filter the beers using the abv>6, classic range and ph<4 checkboxes.
 
+<h2>Technologies 🧠</h2>
+<ul>
+  <li>JavaScript</li>
+  <li>React</li>
+  <li>SCSS</li>
+  <li>HTML</li>
+</ul>
+
 ## ▫️◽️ Design ◽️▫️
 
 The page has been deisgned with the mobile-first approach. The mobile-version does not accomodate the checkbox filters.
