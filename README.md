@@ -17,7 +17,7 @@ This project uses the punk_api (https://punkapi.com) to allow the user to search
 
 ## ▫️◽️ Design ◽️▫️
 
-The page has been deisgned with the mobile-first approach. The mobile-version does not accomodate the checkbox filters.
+The page has been deisgned with the mobile-first approach. The mobile-version does accomodates the checkbox filters.
 
 ## ◾️◼️ Future Improvements ◼️◾️
 
